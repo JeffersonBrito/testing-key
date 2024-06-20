@@ -38,6 +38,7 @@ const Game = ({ closeModal }) => {
     }
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleWin() {
     updatePlayerStats(1, 0);
     fireworkAudio.play();
@@ -45,6 +46,7 @@ const Game = ({ closeModal }) => {
     setTimeout(() => setShowConfetti(false), 4000);
   }
   
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleLoss() {
     updatePlayerStats(0, 1);
     lossAudio.play();
@@ -84,7 +86,7 @@ const Game = ({ closeModal }) => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [sequence, currentIndex, gameStatus, correctIndices]);
+  }, [sequence, currentIndex, gameStatus, correctIndices, clickAudio, handleWin, handleLoss]);
 
   const endGame = (status) => {
     clearInterval(timerRef.current);
