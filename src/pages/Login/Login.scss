@@ -1,0 +1,89 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/function";
+@import "../../assets/scss/mixins";
+
+.Login {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+
+  .box-login {
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    background-color: $background_primary_blue;
+    border: 2px solid $primary-color;
+    border-radius: 16px;
+
+    h1 {
+      color: $primary-color;
+      font-family: $roboto_medium;
+      font-size: 40px;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 40px;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+
+        label {
+          color: white;
+          font-family: $roboto_light;
+          font-size: 20px;
+          font-weight: 300;
+          margin-bottom: 10px;
+          text-align: left;
+          width: 100%;
+        }
+
+        input {
+          background-color: white;
+          color: black;
+          border: unset;
+          font-family: $roboto_light;
+          font-size: 20px;
+          font-weight: 300;
+          height: 40px;
+          margin-bottom: 10px;
+          border-radius: 6px;
+          padding: 0 10px;
+          box-sizing: border-box;
+          width: 100%;
+        }
+
+        button {
+          background-color: $primary-color;
+          border-radius: 6px;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          font-family: $roboto_bold;
+          font-size: 20px;
+          font-weight: bold;
+          margin: 20px 0 0 0;
+          padding: 10px 20px;
+          text-transform: uppercase;
+    
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}
