@@ -1,0 +1,77 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/function";
+@import "../../../assets/scss/mixins";
+
+.Navbar {
+  -webkit-backdrop-filter: blur(8.1px);
+  align-items: center;
+  backdrop-filter: blur(8.1px);
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  padding: 10px 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .infos-navbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .image-info {
+      align-items: center;
+      background: #070ecd;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      font-family: $roboto_bold;
+      font-size: 18px;
+      height: 36px;
+      justify-content: center;
+      margin: 0;
+      width: 36px;
+    }
+
+    .name {
+      color: white;
+      font-family: $roboto_light;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .logout {
+      background-color: transparent;
+      border: unset;
+      cursor: pointer;
+      display: flex;
+      height: 90%;
+      padding: 5px 0;
+
+      .accessibility-only {
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      svg {
+        height: 25px;
+        margin-left: 10px;
+        width: 25px;
+
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+}
