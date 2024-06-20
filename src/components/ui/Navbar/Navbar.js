@@ -37,7 +37,7 @@ const Navbar = () => {
           className="logout"
         >
           <LogoutIcon aria-hidden="true" />
-          <span class="accessibility-only">Logout</span>
+          <span className="accessibility-only">Logout</span>
         </button>
       </div>
     </nav>
