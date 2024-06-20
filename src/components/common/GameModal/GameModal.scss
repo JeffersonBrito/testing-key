@@ -1,0 +1,73 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/function";
+@import "../../../assets/scss/mixins";
+
+.GameModal {
+  background-color: rgba(0, 0, 0, 0.283);
+  box-sizing: border-box;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 6;
+
+  @include breakpoint-for(lg) {
+    padding: 100px;
+  }
+
+  &.active {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint-for(lg) {
+      flex-direction: row;
+    }
+  }
+
+  .modal {
+    align-items: center;
+    background-color: $background_primary_blue;
+    border-radius: 6px;
+    border: 2px solid $primary-color;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    justify-content: flex-start;
+    min-width: 610px;
+    overflow-y: unset;
+    padding: 30px 50px;
+
+    .title_modal {
+      color: $primary-color;
+      font-family: $roboto_light;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 0 0 30px 0;
+    }
+
+    button {
+      &.start_game {
+        background-color: $primary-color;
+        border-radius: 6px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: $roboto_bold;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0 0 30px 0;
+        padding: 10px 20px;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
