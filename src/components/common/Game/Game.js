@@ -84,7 +84,7 @@ const Game = ({ closeModal }) => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [sequence, currentIndex, gameStatus, correctIndices]);
+  }, [sequence, currentIndex, gameStatus, correctIndices, clickAudio, handleWin, handleLoss]);
 
   const endGame = (status) => {
     clearInterval(timerRef.current);
