@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Login from "../pages/Login/Login";
-import BackgroundNew from "../assets/images/bg-mobile.svg";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Navbar from "./ui/Navbar/Navbar";
 
