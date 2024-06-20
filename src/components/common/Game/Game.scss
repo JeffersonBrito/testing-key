@@ -1,0 +1,146 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/function";
+@import "../../../assets/scss/mixins";
+
+.game-container {
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  width: 100%;
+
+  .container-restart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .restart-button {
+      background-color: $primary-color;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-family: $roboto_bold;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 0 30px 0;
+      padding: 10px 20px;
+      text-transform: uppercase;
+  
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .description-sequence {
+    color: white;
+    font-family: $roboto_light;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .game-over {
+    color: white;
+    font-family: $roboto_light;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+
+    .initial-game-button{
+      background-color: $primary-color;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-family: $roboto_bold;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 0 30px 0;
+      padding: 10px 20px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+
+    .button-container {
+      display: flex;
+      margin-top: 40px;
+      width: 100%;
+
+      button {
+        background-color: $primary_color;
+        border-radius: 4px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+
+        &.exit-button {
+          background-color: rgb(17, 19, 29);
+          color: rgb(188, 188, 187);
+
+          &:hover {
+            background-color: darken(rgb(17, 19, 29), 10%);
+          }
+        }
+
+        &:hover {
+          background-color: darken($primary_color, 10%);
+        }
+      }
+    }
+  }
+
+  .sequence-display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .key {
+      align-items: center;
+      background: rgba(17, 19, 29, 0.611);
+      border-radius: 6px;
+      border: 2px solid $primary-color;
+      color: white;
+      display: flex;
+      font-family: $roboto_light;
+      font-size: 24px;
+      font-weight: 600;
+      justify-content: center;
+      margin: 0 5px;
+      padding: 10px 15px;
+      transition: all 0.3s ease-in-out;
+      width: 20px;
+
+      &.correct {
+        background-color: $primary_color;
+        border-color: $primary_color;
+        color: black;
+      }
+    }
+  }
+
+  .timer {
+    background-color: rgba(255, 255, 255, 0.427);
+    border-radius: 4px;
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+
+    .progress-bar {
+      background-color: $primary_color;
+      height: 100%;
+      transition: width 1s linear;
+    }
+  }
+}
