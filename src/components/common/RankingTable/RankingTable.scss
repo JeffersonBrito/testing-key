@@ -1,0 +1,28 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/function";
+@import "../../../assets/scss/mixins";
+
+.RankingTable {
+  width: 100%;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      border: 1px solid #ccc;
+      font-family: $roboto_light;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #070ecd;
+    }
+
+    .medal {
+      font-size: 15px;
+      margin-right: 5px;
+    }
+  }
+}
