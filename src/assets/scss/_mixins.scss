@@ -1,0 +1,7 @@
+@import "variables";
+
+@mixin breakpoint-for($class) {
+  @media (min-width: map_get($breakpoints, $class)) {
+    @content;
+  }
+}

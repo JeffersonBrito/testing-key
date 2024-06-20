@@ -1,0 +1,51 @@
+@mixin font-face($font-family, $font-suffix, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-suffix) format("truetype"),
+      url($font-suffix) format("opentype");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font-face(
+  Roboto-Light,
+  "../../assets/fonts/Roboto-Light.ttf",
+  200,
+  normal
+);
+
+@include font-face(
+  Roboto-Thin,
+  "../../assets/fonts/Roboto-Thin.ttf",
+  100,
+  normal
+);
+
+@include font-face(
+  Roboto-Regular,
+  "../../assets/fonts/Roboto-Regular.ttf",
+  300,
+  normal
+);
+
+@include font-face(
+  Roboto-Bold,
+  "../../assets/fonts/Roboto-Bold.ttf",
+  800,
+  normal
+);
+
+@include font-face(
+  Roboto-Medium,
+  "../../assets/fonts/Roboto-Medium.ttf",
+  400,
+  normal
+);
+
+@include font-face(
+  Roboto-Italic,
+  "../../assets/fonts/Roboto-Italic.ttf",
+  100,
+  normal
+);

@@ -1,0 +1,25 @@
+@import './fonts';
+
+$roboto_light: Roboto-Light, sans-serif;
+$roboto_bold: Roboto-Bold, sans-serif;
+$roboto_regular: Roboto-Regular, sans-serif;
+$roboto_thin: Roboto-Thin, sans-serif;
+$roboto_medium: Roboto-Medium, sans-serif;
+$roboto_italic: Roboto-Italic, sans-serif;
+
+$primary_color: rgb(255, 192, 70);
+$secondary-color: #000AFF;
+
+$background_primary_blue: #011283;
+$background_primary_dark_color: rgba(29, 29, 48, 0.6);
+
+$breakpoints: (
+  "mobile-medium": 400px,
+  "mobile-larger": 576px,
+  "tablet": 768px,
+  "tablet-large": 992px,
+  "desktop-small": 1024px,
+  "desktop-medium": 1440px,
+  "desktop-large": 1600px,
+  "desktop-extra-large": 1800px
+);
