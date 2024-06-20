@@ -1,0 +1,21 @@
+@import "../assets/scss/variables";
+@import "../assets/scss/function";
+@import "../assets/scss/mixins";
+
+.app-bg {
+  background-image: url('../assets/images/bg-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  height: 110%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+
+  @include breakpoint-for(desktop-small) {
+    width: 100%;
+  }
+}

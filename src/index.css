@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  background: rgb(17, 19, 29);
+}
+
+html {
+  scroll-behavior: smooth;
+}
